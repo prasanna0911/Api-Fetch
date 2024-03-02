@@ -1,0 +1,54 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/8b1679ca39.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+	<script src="app.js" defer></script>
+</head>
+<body>
+	<header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+            <div class="container">
+                <a class="navbar-brand">Fetch</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="mynav">
+                    <ul class="navbar-nav ms-auto">
+                        <li><a class="nav-link active" href="index.html"><i class="fa-solid fa-right-to-bracket"></i>&nbsp;signup</a></li>
+                        <li><a class="nav-link" href="index2.html"><i class="fa-solid fa-user"></i>&nbsp;login</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+	<div id="container">
+		<h2>Register</h2>
+		<form id="form" action="index2.html">
+			<div id="input-group">
+				<label for="username">Username:</label>
+				<input type="text" name="username" id="username">
+				<div id="error"></div>
+			</div>
+			<div id="input-group">
+				<label for="email">Email:</label>
+				<input type="text" name="email" id="email">
+				<div id="error"></div>
+			</div>
+			<div id="input-group">
+				<label for="password">Password:</label>
+				<input type="password" name="password" id="password">
+				<div id ="error"></div>
+			</div>
+			<div id="input-group">
+				<label for="cpassword">Confirm Password:</label>
+				<input type="password" name="cpassword" id="cpassword">
+				<div id="error"></div>
+			</div>
+			<button id="btn" type="submit">Register</button>
+			<p id="register">Already have an account ?<a href="index2.html">Login</a></p>
+		</form>
+	</div>
+</body>
+</html>
